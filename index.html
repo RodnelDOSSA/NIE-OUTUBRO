@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ELSA-BRASIL NIE</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/ELSA_BRASIL.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->  
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Envio Outubro 2023</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/elsa_logo.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre">sobre</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Extração">Extração</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Arrumar base EAS">Arrumar base EAS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Sintaxe">Sintaxe</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Resultados">Resultados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Queries">Queries</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Base de óbitos">Base de óbitos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Envio ELSA-BOX">Envio ELSA-BOX</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Envio relatórios NIE">Envio relatórios NIE</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Envio queries">Envio queries</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- sobre-->                           
+            <section class="resume-section" id="sobre">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Envio Outubro 2023
+                        <span class="text-primary">(NIE 01/10/23)</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Autor: Kpèdé Djidjoho Rodnel Jean-Paterne Dossa·
+                        <a href="http://elsabrasil.org"  target="_blank">ELSA-BRASIL</a>
+                    </div>
+                    <p class="lead mb-5"> Se  trata de todos  os  passos realizados envolvendo a  geração e  pós-geração do relatório NIE de 01/10/23.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/kpèdé-djidjoho-rodnel-jean-paterne-dossa-27205219a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/RodnelDOSSA" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/rodneldossa/"  target="_blank"><i class="fab fa-instagram"></i></a>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Extração-->
+            <section class="resume-section" id="Extração">
+                <div class="resume-section-content">
+                    <h2 class="col">Extração</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            
+                          
+                            <p class="parágrafo2">
+                                
+                                - O caminho do programa para a extração das bases  de  desfechos (EAS, ELE, RCP, CAR, etc...)  tanto do sistema <strong> EHR </strong> quanto do sistema <strong> Otus </strong>:
+                                <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\CN0009_notEAS_050423_Extracao</strong>'.
+                                <br> <br>
+                                - A extração do EAS foi atrasada, devido a problema no sistema (<strong>ticket OPSD-2481</strong>). 
+                                <br> <br>
+                                - Com a extração (<strong>feita dia 11</strong>), foi  usado um  programa em <strong>R</strong> com nome <strong>'r_script'</strong> para transformar metadados <strong>',A'</strong> em <strong>'.A'</strong>  antes de ler no SAS. 
+                                A pasta onde ficaram salvos aquele  programa <strong>R</strong>, os  arquivos <strong>csv</strong> e a base com extensão <strong>'sas7bdat'</strong> de EAS é a seguinte: <strong> 'Y:\ELSA\Extracao\Extracao Desfechos Otus\Bases extraidas producao\2023-10-01'</strong>.  
+                            </p>
+                       </div>
+                       
+                    </div>
+                    
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Arrumar base EAS-->
+            <section class="resume-section" id="Arrumar base EAS">
+                <div class="resume-section-content">
+                    <h2 class="col">Arrumar a base EAS</h2>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">  <!--  mb-5 -->
+                        <div class="flex-grow-1">
+
+                            <p class="parágrafo3"> 
+                                
+                                - Programa referência: <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\extracao_eas_nicolas_270123.sas'</strong>
+                                <br> <br>
+                                - Novo programa com alteração feita pela <strong>Luiza Beneduzi</strong>: <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\extracao_eas_nicolas_181023.sas'</strong>
+                                <br> <br>
+                                - O novo programa <strong>'extracao_eas_nicolas_181023.sas'</strong> utilizou a base em <strong>csv</strong> <strong>'EASA_1_2023-10-01_lidoR'</strong> que ficou  salva na pasta <strong>'Y:\ELSA\Extracao\Extracao Desfechos Otus\Bases extraidas producao\2023-10-01</strong> e salvou a base correta de <strong>EAS</strong> com extensão <strong>'sas7bdat'</strong> na mesma pasta  com nome <strong>'desfechos_eas_011023'</strong>.
+                         </p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Sintaxe-->
+            <section class="resume-section" id="Sintaxe">
+                <div class="resume-section-content">
+                    <h2 class="col">Sintaxe</h2>
+                    <p class="parágrafo4">
+                        - Programa de Sintaxe:  <strong> 'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\CN0009_notEAS_051022_Sintaxe_teste_car_cer.sas'</strong>
+                        <br> <br>
+                        - Esse programa inteiro é rodado para deixar prontas as bases que vão ser usadas no programa de <strong> Resultados</strong> depois.
+                        <br> <br>
+                        <strong>NB:</strong> Mudar no início do programa, os parâmetros <strong>dataextra</strong> e <strong>dataextraantigo</strong>.</p>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Resultados-->
+            <section class="resume-section" id="Resultados">
+                <div class="resume-section-content">
+                    <h2 class="col">Resultados</h2>
+                    <p class="parágrafo5">- Programa de Resultados:  <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\CN0009_notEAS_221122_Resultados.sas'</strong>
+                        <br> <br>
+                         <strong>NB:</strong> Este é o programa de fato que gera o relatório NIE geralzão e aquele de cada centro específico com extensão <strong>xlsx</strong> . Os relatórios gerados em <strong>Outubro</strong>  ficaram salvos na pasta seguinte: <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Relatorios\01-10-2023'</strong></p>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Queries-->
+            <section class="resume-section" id="Queries">
+                <div class="resume-section-content">
+                    <h2 class="col">Queries</h2>
+                    <p class="parágrafo6">
+    
+                        - Requisito para poder rodar com sucesso o programa de queries: <strong>Relatório ELEA</strong>. 
+                        <br> <br>
+                        - No programa de <strong>Queries</strong>, as conferências <strong>7</strong> e <strong>8</strong> necessitam o uso do relatório ELEA.  
+                        <br> <br>
+                        - Programa para gerar o relatório ELEA: <strong>'Y:\ELSA\Solicitações\CN0010_ELEA\CN0010_ELEA_081019.sas'</strong>
+                        <br> 
+                          <strong>NB:</strong> O relatório ELEA gerado ficou salvo na pasta: <strong>'Y:\ELSA\Solicitações\CN0010_ELEA\Relatórios\01-10-2023'</strong>
+                        <br><br>
+                        - Programa de <strong>Queries</strong>: <strong>  'Y:\ELSA\Solicitações\CN0009_NotEAS\Programas\CN0009_notEAS_060519_Queries.sas'</strong>
+                        <br> <br>
+                        - Pasta onde foram salvas as <strong>Queries</strong>: <strong> 'Y:\ELSA\Solicitações\CN0009_NotEAS\Relatorios\01-10-2023\Queries'</strong>
+                 
+                
+                    </p>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Base de óbitos-->
+            <section class="resume-section" id="Base de óbitos">
+                <div class="resume-section-content">
+                    <h2 class="col">Base de óbitos</h2>
+                    <p class="parágrafo7">Base de óbitos
+                        - Na pasta <strong>'Y:\ELSA\Solicitações\EL0230_Base_Obitos'</strong> tem um arquivo  <strong>'txt'</strong> com nome <strong>'LEIA ME'</strong> que informa sobre qual programa utilizar para poder gerar a base de óbitos.
+                        <br> 
+                        <strong>NB:</strong> Favor, ler esse arquivo para ganhar em tempo.
+                        <br> <br>
+                        - Pasta onde ficou salva a base de óbitos gerada:  <strong>'Y:\ELSA\Solicitações\EL0230_Base_Obitos\2023-10-01'</strong>
+                        <br>  
+                        <strong>NB:</strong> Essa pasta foi criada na mão sem passar por uma <strong>macro</strong> que cria pastas se elas não foram criadas antes. Foi salvo na mão nessa pasta, o programa <strong>'EL0230_Base_Obitos_011023'</strong> que foi utilizado pra gerar a base de óbitos.
+                        </p>
+                    
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Envio ELSA-BOX-->
+            <section class="resume-section" id="Envio ELSA-BOX">
+                <div class="resume-section-content">
+                    <h2 class="col">Envio dos arquivos CARAIDI no ELSA-BOX</h2>
+                    <p class="parágrafo8">
+       
+                        - Os arquivos <strong>'CARAIDI'</strong> têm que ser enviados no <strong>'Elsa-Box'</strong> na seção: <strong>'Uploads ao ELSABOX-181119'</strong>
+                        <br> <br>
+                        - Pasta onde foram salvos os arquivos <strong>'CARAIDI'</strong>: <strong> 'Y:\ELSA\Solicitações\CN0011_CAR\2023-10-01'</strong>
+                        
+                    </p>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Envio relatórios NIE-->
+            <section class="resume-section" id="Envio relatórios NIE">
+                <div class="resume-section-content">
+                    <h2 class="col">Envio dos e-mails com os relatórios NIE</h2>
+                    <p class="parágrafo9">
+    
+                        Tanto o relatório NIE geralzão quanto o relatório NIE específico a cada centro em excel foram armazenados, cada um num arquivo <strong>'zip'</strong> que foi salvo na pasta: <strong>'Y:\ELSA\Solicitações\CN0009_NotEAS\Relatorios\01-10-2023'</strong> e enviados aos diferentes centros pelo e-mail da equipe de estatística do ELSA-BRASIL.
+                      
+                    </p>
+                </div>
+            </section>
+
+
+
+            <hr class="m-0" />
+            <!-- Envio queries-->
+            <section class="resume-section" id="Envio queries">
+                <div class="resume-section-content">
+                    <h2 class="col">Envio das queries por e-mail</h2>
+                    <p class="parágrafo10">
+    
+                        Na pasta seguinte:  <strong> 'Y:\ELSA\Solicitações\CN0009_NotEAS\Documentações\doc-desfechos\documentos'</strong> tem um  arquivo <strong>'html'</strong> com nome <strong>'doc-desfechos'</strong> criado  pelo <strong>Angelo</strong> que tem uma sub-seção chamada <strong>'1.3 Queries'</strong> da seção  <strong>'1 Relatório EAS'</strong>que permite saber como enviar os e-mails com as queries referentes aos  centros concernados.
+                        <br>
+                       
+                        
+                    </p>
+                </div>
+            </section>
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
